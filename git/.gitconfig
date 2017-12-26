@@ -1,0 +1,8 @@
+[user]
+	email = russell.parker7@gmail.com
+	name = Russell Parker
+[color]
+	ui = true
+[core]
+	editor = vim
+	autocrlf = input
