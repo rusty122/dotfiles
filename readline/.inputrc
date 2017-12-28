@@ -1,0 +1,31 @@
+# .inputrc
+
+# when completing a path, color files and directories
+# according to LS_COLORS
+set colored-stats on
+
+# no bells
+set bell-style none
+
+# indicate the opening parenthesis
+set blink-matching-paren on
+
+# highlight the common prefix
+set colored-completion-prefix on
+
+# immediately show possible completions
+# no need to press tab twice
+set show-all-if-ambiguous on
+
+set completion-ignore-case on
+
+# max items before readline asks if you're sure
+set completion-query-items 100
+
+# append slash to real directories and symlinked directories
+set mark-directories on
+set mark-symlinked-directories on
+
+# cursor movement with Ctrl + arrow keys
+"\e[1;5D": backward-word
+"\e[1;5C": forward-word
