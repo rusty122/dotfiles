@@ -1,0 +1,93 @@
+! File: .Xresources
+! Author: Russell Parker
+
+
+! Color-scheme : flowers
+! Source       : http://www.xcolors.net/dl/flowers
+
+*.foreground:   #e0ede6
+*.background:   #170e21
+*.cursorColor:  #e0ede6
+
+*.color0:       #170e21
+*.color8:       #242120
+*.color1:       #9c5c5a
+*.color9:       #ceaead
+*.color2:       #95ab56
+*.color10:      #b2baaa
+*.color3:       #c1d155
+*.color11:      #c1d155
+*.color4:       #483f5c
+*.color12:      #9d92aa
+*.color5:       #924e65
+*.color13:      #c9a7b2
+*.color6:       #aeaaa9
+*.color14:      #c7cdc1
+*.color7:       #e0ede6
+*.color15:      #e6f2e6
+
+! set TERM env variable
+xterm.termName: xterm-256color
+
+! ensure Alt key works normally
+xterm.vt100.metaSendsEscape: true
+
+! save more lines
+xterm.vt100.saveLines: 4096
+
+! do not show the scrollbar
+xterm.vt100.scrollBar: false
+
+! specify terminal window geometry
+xterm.vt100.geometry: 80x24
+
+! set key bindings for Shift-Ctrl-C and Shift-Ctrl-V copying and pasting
+! set key bindings for font resizing
+! set key bindings for opening urls with Shift-Ctrl-Click
+xterm.vt100.translations: #override \
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl <Key> plus: larger-vt-font() \n\
+    Ctrl <Key> 0: set-vt-font(d) \n\
+    Ctrl <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY)
+
+! set mono font face and default size
+xterm.vt100.faceName: Cousine:antialias=false
+xterm.vt100.faceSize: 10
+
+! VT Font Menu: Unreadable
+xterm.vt100.faceSize1: 7
+! VT font menu: Tiny
+xterm.vt100.faceSize2: 8
+! VT font menu: Medium
+xterm.vt100.faceSize3: 12
+! VT font menu: Large
+xterm.vt100.faceSize4: 14
+! VT font menu: Huge
+xterm.vt100.faceSize5: 16
+
+! enable TrueType fonts
+xterm.vt100.renderFont: true
+
+! bell config
+xterm.vt100.visualBell: false
+xterm.vt100.bellIsUrgent: false
+
+! remove trailing whitespace when selecting
+xterm.vt100.trimSelection: true
+
+! only select text
+xterm.vt100.highlightSelection: true
+
+! turn off scrolling for line output (e.g. while using tail)
+xterm.vt100.scrollTtyOutput: false
+
+! not a login shell
+xterm.vt100.loginShell: false
+
+! unicode support
+xterm.vt100.utf8: 1
+
+! keep cursor steady
+xterm.vt100.cursorBlink: false
