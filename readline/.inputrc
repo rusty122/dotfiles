@@ -12,10 +12,12 @@ set blink-matching-paren on
 
 # highlight the common prefix
 set colored-completion-prefix on
+set menu-complete-display-prefix on
 
 # immediately show possible completions
 # no need to press tab twice
 set show-all-if-ambiguous on
+set show-all-if-unmodified on
 
 set completion-ignore-case on
 
@@ -29,3 +31,10 @@ set mark-symlinked-directories on
 # cursor movement with Ctrl + arrow keys
 "\e[1;5D": backward-word
 "\e[1;5C": forward-word
+
+# meta key config
+set convert-meta off
+set enable-meta-key on
+set input-meta on
+set meta-flag on
+set output-meta on
