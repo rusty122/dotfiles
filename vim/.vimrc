@@ -1,24 +1,37 @@
-" show line numbers
+" ~/.vimrc
+"
+" Author: Russell Parker
+
+"--------------------
+" general
+"--------------------
 set number
 
-" configure syntax highlighting
+"--------------------
+" syntax highlighting
+"--------------------
 syntax on
-colorscheme desert
+colorscheme koehler
 
-" handle whitespace
+"--------------------
+" whitespace
+"--------------------
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+"--------------------
+" bell
+"--------------------
+set visualbell
+set t_vb=
 
-"""""""""""""""""""""""""""""" Vundle Settings """"""""""""""""""""""""""""""""
-" be iMproved, required
+"--------------------
+" Vundle setup
+"--------------------
 set nocompatible
-" required
 filetype off
-
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
