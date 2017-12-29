@@ -1,38 +1,45 @@
-# .inputrc
+# ~/.inputrc
+#
+# Author: Russell Parker
 
-# when completing a path, color files and directories
-# according to LS_COLORS
-set colored-stats on
+# --------------------
+# vi mode
+# --------------------
+set editing-mode vi
+set show-mode-in-prompt on
+set vi-ins-mode-string "+"
+set vi-cmd-mode-string ":"
+set keymap vi insert
+  Control-l: clear-screen
 
-# no bells
-set bell-style none
-
-# indicate the opening parenthesis
-set blink-matching-paren on
-
-# highlight the common prefix
-set colored-completion-prefix on
-set menu-complete-display-prefix on
-
-# immediately show possible completions
-# no need to press tab twice
+# --------------------
+# completion
+# --------------------
 set show-all-if-ambiguous on
 set show-all-if-unmodified on
-
 set completion-ignore-case on
-
-# max items before readline asks if you're sure
 set completion-query-items 100
-
-# append slash to real directories and symlinked directories
+set colored-completion-prefix on
+set menu-complete-display-prefix on
+set colored-stats on
 set mark-directories on
 set mark-symlinked-directories on
 
-# cursor movement with Ctrl + arrow keys
+# --------------------
+# miscellaneous
+# --------------------
+set bell-style none
+set blink-matching-paren on
+
+# --------------------
+# movement
+# --------------------
 "\e[1;5D": backward-word
 "\e[1;5C": forward-word
 
-# meta key config
+# --------------------
+# meta key
+# --------------------
 set convert-meta off
 set enable-meta-key on
 set input-meta on
