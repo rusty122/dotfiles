@@ -1,0 +1,7 @@
+#EXTM3U
+#EXTINF:-1, WBUR NPR
+https://icecast-stream.wbur.org/wbur_www
+#EXTINF:-1, WGBH NPR
+http://wgbh.streamguys.com:8000/wgbh
+#EXTINF:-1, WMFO
+http://new-webstream.wmfo.org/
