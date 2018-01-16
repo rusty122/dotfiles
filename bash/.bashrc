@@ -1,13 +1,20 @@
-# ~/.bashrc: executed for non-login shells
+# ~/.bashrc
+#
+# Author: Russell Parker
 
-# clean shell prompt
-export PS1="\[\e[32m\]\u \[\e[37m\]\w \[\e[31m\]\$\[\e[0m\] "
-export PS2="> "
+export PROMPT_COMMAND=prompt
+prompt() {
+    local exit=$?
+    PS1="\[\e[32m\]\u \[\e[37m\]\w \[\e[31m\]\$\[\e[0m\] "
+    if [ $exit -ne 0 ]; then
+        echo "Exit code: $exit"
+    fi
+}
 
 # history
-HISTCONTROL=ignoreboth
-HISTSIZE=1000
-HISTFILESIZE=2000
+export HISTCONTROL=ignoreboth
+export HISTSIZE=1000
+export HISTFILESIZE=2000
 shopt -s histappend # append history file
 
 # check the window size after each command and update dimensions
