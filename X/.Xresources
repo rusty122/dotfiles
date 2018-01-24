@@ -5,28 +5,44 @@
 !--------------------
 ! color-scheme: flowers
 ! source      : http://www.xcolors.net/dl/flowers
+! source      : modified from https://x.eti.tf/VCRKp.xres
 !--------------------
-*.foreground:   #e0ede6
+! special
+*.foreground:   #ffffff
 *.background:   #170e21
-*.cursorColor:  #e0ede6
+*.cursorColor:  #ffffff
 
-*.color0:       #170e21
-*.color8:       #242120
+! black
+*.color0:       #071d22
+*.color8:       #617278
+
+! red
 *.color1:       #9c5c5a
 *.color9:       #ceaead
-*.color2:       #95ab56
-*.color10:      #b2baaa
-*.color3:       #c1d155
-*.color11:      #c1d155
-*.color4:       #483f5c
-*.color12:      #9d92aa
-*.color5:       #924e65
-*.color13:      #c9a7b2
-*.color6:       #aeaaa9
-*.color14:      #c7cdc1
-*.color7:       #e0ede6
-*.color15:      #e6f2e6
 
+! green
+*.color2:       #8cc495
+*.color10:      #ade1b6
+
+! yellow
+*.color3:       #f0e0aa
+*.color11:      #fbf1cf
+
+! blue
+*.color4:       #8ab6c2
+*.color12:      #b5dbe4
+
+! magenta
+*.color5:       #94a9d9
+*.color13:      #b6cbfa
+
+! cyan
+*.color6:       #7eb5ac
+*.color14:      #a3d0c8
+
+! white
+*.color7:       #b3bec1
+*.color15:      #f7f8f8
 
 !--------------------
 ! general
@@ -57,19 +73,19 @@ xterm.vt100.translations: #override \
 ! font
 !--------------------
 xterm.vt100.faceName: Cousine:antialias=false
-xterm.vt100.faceSize: 10
+xterm.vt100.faceSize: 11
 xterm.vt100.renderFont: true
 
 ! VT Font Menu: Unreadable
-xterm.vt100.faceSize1: 7
+xterm.vt100.faceSize1: 8
 ! VT font menu: Tiny
-xterm.vt100.faceSize2: 8
+xterm.vt100.faceSize2: 9
 ! VT font menu: Medium
-xterm.vt100.faceSize3: 12
+xterm.vt100.faceSize3: 13
 ! VT font menu: Large
-xterm.vt100.faceSize4: 14
+xterm.vt100.faceSize4: 15
 ! VT font menu: Huge
-xterm.vt100.faceSize5: 16
+xterm.vt100.faceSize5: 18
 
 
 !--------------------
