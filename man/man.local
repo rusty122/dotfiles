@@ -1,0 +1,5 @@
+.\" Add a searchable string before each section header
+.rn SH SH-orig
+.de SH
+.SH-orig \(sc \\$*
+..
