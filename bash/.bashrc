@@ -50,11 +50,24 @@ alias egrep='egrep --color=auto'
 # configure GCC colors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# configure less to use colors
-export LESS_TERMCAP_mb=$(printf '\e[01;31m')
-export LESS_TERMCAP_md=$(printf '\e[01;35m')
-export LESS_TERMCAP_me=$(printf '\e[0m')
-export LESS_TERMCAP_se=$(printf '\e[0m')    
-export LESS_TERMCAP_so=$(printf '\e[01;33m')
-export LESS_TERMCAP_ue=$(printf '\e[0m')
-export LESS_TERMCAP_us=$(printf '\e[04;36m')
+# configure less termcap colors
+export LESS_TERMCAP_mb=$(tput bold; tput setaf 2)
+export LESS_TERMCAP_md=$(tput bold; tput setaf 6)
+export LESS_TERMCAP_me=$(tput sgr0)
+export LESS_TERMCAP_so=$(tput bold; tput setaf 3; tput setab 4)
+export LESS_TERMCAP_se=$(tput rmso; tput sgr0)
+export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 7)
+export LESS_TERMCAP_ue=$(tput rmul; tput sgr0)
+export LESS_TERMCAP_mr=$(tput rev)
+export LESS_TERMCAP_mh=$(tput dim)
+
+# let xterm display colors in less
+export GROFF_NO_SGR=1
+
+# simplify the less prompt in man
+export MANLESS='\ Manual\ page\ \$MAN_PN\ %lt/%L %pB\%'
+export MANPAGER='less ++Gg'
+
+# use vim as default program for editing
+export EDITOR=vim
+export VISUAL=vim
