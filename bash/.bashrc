@@ -61,12 +61,10 @@ export LESS_TERMCAP_ue=$(tput rmul; tput sgr0)
 export LESS_TERMCAP_mr=$(tput rev)
 export LESS_TERMCAP_mh=$(tput dim)
 
-# let xterm display colors in less
-export GROFF_NO_SGR=1
-
 # simplify the less prompt in man
 export MANLESS='\ Manual\ page\ \$MAN_PN\ %lt/%L %pB\%'
 export MANPAGER='less ++Gg'
+export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
 
 # use vim as default program for editing
 export EDITOR=vim
