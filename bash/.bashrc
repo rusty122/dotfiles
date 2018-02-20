@@ -43,7 +43,6 @@ eval "$(dircolors -b)"
 
 # use colors in commands
 alias ls='ls --color=auto'
-alias diff='diff --color=auto'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -62,7 +61,7 @@ export LESS_TERMCAP_ue=$(tput rmul; tput sgr0)
 export LESS_TERMCAP_mr=$(tput rev)
 export LESS_TERMCAP_mh=$(tput dim)
 
-# simplify the less prompt in man
+# configure man less prompt and groff color
 export MANLESS='\ Manual\ page\ \$MAN_PN\ %lt/%L %pB\%'
 export MANPAGER='less ++Gg'
 export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
@@ -70,3 +69,6 @@ export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
 # use vim as default program for editing
 export EDITOR=vim
 export VISUAL=vim
+
+# close shell on first ^D
+export IGNOREEOF=0
