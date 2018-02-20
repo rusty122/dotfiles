@@ -5,9 +5,17 @@
 export PROMPT_COMMAND=prompt
 prompt() {
     local exit=$?
+    # set primary prompt string and print non-zero exit code
     PS1="\[\e[32m\]\u \[\e[37m\]\w \[\e[31m\]\$\[\e[0m\] "
     if [ $exit -ne 0 ]; then
         echo "Exit code: $exit"
+    fi
+
+    # set line width for man pages with maximum of 80
+    if [ $COLUMNS -lt 80 ]; then
+        export MANWIDTH=$COLUMNS
+    else
+        export MANWIDTH=80
     fi
 }
 
