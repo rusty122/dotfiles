@@ -1,0 +1,10 @@
+# ~/.lesskey
+#
+# Author: Russell Parker
+
+
+#command
+    # remap tab to search for section
+    \t forw-search §\r 
+#env
+    LESSHISTSIZE = 100
