@@ -1,8 +1,13 @@
+# ~/.gitconfig
+#
+# Author: Russell Parker
+
 [user]
-	email = russell.parker7@gmail.com
-	name = Russell Parker
+    email = russell.parker7@gmail.com
+    name = Russell Parker
 [color]
-	ui = true
+    ui = true
 [core]
-	editor = vim
-	autocrlf = input
+    editor = vim
+    autocrlf = input
+    pager = less -RF
