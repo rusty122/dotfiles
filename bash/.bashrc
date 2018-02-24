@@ -62,8 +62,7 @@ export LESS_TERMCAP_mr=$(tput rev)
 export LESS_TERMCAP_mh=$(tput dim)
 
 # configure man less prompt and groff color
-export MANLESS='\ Manual\ page\ \$MAN_PN\ %lt/%L %pB\%'
-export MANPAGER='less ++Gg'
+export MANPAGER='less -JQ ++Gg'
 export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
 
 # use vim as default program for editing
