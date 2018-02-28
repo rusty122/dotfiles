@@ -51,7 +51,6 @@ xterm.vt100.saveLines: 4096
 xterm.termName: xterm-256color
 xterm.vt100.scrollBar: false
 xterm.vt100.geometry: 80x24
-xterm.vt100.scrollTtyOutput: false
 xterm.vt100.loginShell: false
 xterm.vt100.utf8: 1
 xterm.vt100.metaSendsEscape: true
