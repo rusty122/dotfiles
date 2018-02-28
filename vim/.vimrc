@@ -9,6 +9,7 @@ set number                      " number lines
 set cursorline                  " add underline on current line 
 set showcmd                     " not totally sure
 set lazyredraw                  " redraw only when necessary, for performance
+set nowrap
 
 "--------------------
 " syntax highlighting

@@ -69,5 +69,7 @@ export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
 export EDITOR=vim
 export VISUAL=vim
 
+export PAGER=less
+
 # close shell on first ^D
 export IGNOREEOF=0
