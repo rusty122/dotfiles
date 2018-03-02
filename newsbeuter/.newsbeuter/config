@@ -1,0 +1,16 @@
+# ~/.newsbeuter/config
+#
+# Author: Russell Parker
+
+browser "firefox %u"
+notify-beep yes
+text-width 80
+cleanup-on-quit no
+
+# vim navigation
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key j down article
+bind-key k up article
