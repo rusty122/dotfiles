@@ -6,11 +6,14 @@
 # --------------------
 # prompt
 # --------------------
-export PROMPT_DIRTRIM=2
+PROMPT_DIRTRIM=2
 export PROMPT_COMMAND=prompt
 prompt() {
     local exit=$?
     local maxmanwidth=80
+
+    # write to history
+    history -a
 
     # set primary prompt string and print non-zero exit codes
     PS1="\[\e[32m\]\u \[\e[37m\]\w \[\e[31m\]\$\[\e[0m\] "
@@ -35,6 +38,13 @@ export PAGER=less
 # check the window size after each command and update dimensions
 shopt -s checkwinsize
 
+# allow directory change without cd command
+shopt -s autocd
+
+# attempt to correct minor directory mis-spellings
+shopt -s cdspell
+shopt -s dirspell
+
 # use vim as default program for editing
 export EDITOR=vim
 export VISUAL=vim
@@ -42,14 +52,16 @@ export VISUAL=vim
 # close shell on first Ctrl-D
 export IGNOREEOF=0
 
+# enable incremental search
+stty -ixon
+
 
 # --------------------
 # history
 # --------------------
 export HISTCONTROL=ignoreboth
-export HISTSIZE=1000
-export HISTFILESIZE=2000
-shopt -s histappend # append history file
+export HISTSIZE="NO_LIMIT"
+export HISTFILESIZE="NO_LIMIT"
 
 
 # --------------------
