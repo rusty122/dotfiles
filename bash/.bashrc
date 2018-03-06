@@ -50,7 +50,7 @@ export EDITOR=vim
 export VISUAL=vim
 
 # close shell on first Ctrl-D
-export IGNOREEOF=0
+set +o ignoreeof
 
 # enable incremental search
 stty -ixon
@@ -59,9 +59,10 @@ stty -ixon
 # --------------------
 # history
 # --------------------
-export HISTCONTROL=ignoreboth
-export HISTSIZE="NO_LIMIT"
-export HISTFILESIZE="NO_LIMIT"
+HISTCONTROL=ignoreboth
+HISTSIZE="NO_LIMIT"
+HISTFILESIZE="NO_LIMIT"
+HISTTIMEFORMAT="%a %D %I:%M%P "
 
 
 # --------------------
