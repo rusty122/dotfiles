@@ -2,12 +2,17 @@
 #
 # Author: Russell Parker
 
+# --------------------
+# general
+# --------------------
 browser "firefox %u"
 notify-beep yes
-text-width 80
+text-width 80           # keep text at a readable length
 cleanup-on-quit no
 
-# vim navigation
+# --------------------
+# navigation
+# --------------------
 bind-key j down feedlist
 bind-key k up feedlist
 bind-key j next articlelist

@@ -1,4 +1,10 @@
-# feeds
+# ~/.newsbeuter/config
+#
+# Author: Russell Parker
+
+# --------------------
+# individual feeds
+# --------------------
 http://antirez.com/rss "~antirez"
 https://cypher.codes/feed.xml
 https://www.dgsiegel.net/rss
@@ -7,10 +13,28 @@ https://zachholman.com/atom.xml
 https://jobtipsforgeeks.com/feed/
 https://attilagyorffy.com/rss/
 http://feeds.feedburner.com/codinghorror
+http://feeds2.feedburner.com/stevelosh
 https://functionallyparanoid.com/feed/
 http://blog.tintagel.pl/feed.xml
 https://www.joelonsoftware.com/feed/
 http://nicolashery.com/feed.xml
 https://snarky.ca/rss/
 http://node.mu/index.xml
+https://maxhallinan.com/feed.xml
+https://tingping.github.io/feed.xml
+https://blog.safia.rocks/rss
+https://penguindreams.org/feed.xml
+http://bitcannon.net/index.xml
+https://monkey.org/~marius/atom.xml
+
+# --------------------
+# oranization feeds
+# --------------------
+https://www.recurse.com/blog.rss
+https://engineeringblog.yelp.com/feed.xml
+https://medium.com/feed/airbnb-engineering
+https://githubengineering.com/atom.xml
+https://engineering.pinterest.com/blog/rss
+https://blogs.dropbox.com/tech/feed/
+https://www.toptal.com/developers/blog.rss
 https://blog.rust-lang.org/feed.xml
