@@ -12,7 +12,7 @@ prompt() {
     local exit=$?
     local maxmanwidth=80
 
-    # write to history
+    # append to central history file
     history -a
 
     # set primary prompt string and print non-zero exit codes
@@ -38,13 +38,6 @@ export PAGER=less
 # check the window size after each command and update dimensions
 shopt -s checkwinsize
 
-# allow directory change without cd command
-shopt -s autocd
-
-# attempt to correct minor directory mis-spellings
-shopt -s cdspell
-shopt -s dirspell
-
 # use vim as default program for editing
 export EDITOR=vim
 export VISUAL=vim
@@ -54,6 +47,17 @@ set +o ignoreeof
 
 # enable incremental search
 stty -ixon
+
+
+# --------------------
+# movement
+# --------------------
+shopt -s autocd
+shopt -s direxpand
+
+# correct minor directory mis-spellings
+shopt -s cdspell
+shopt -s dirspell
 
 
 # --------------------
@@ -106,3 +110,10 @@ fi
 # --------------------
 export MANPAGER='less -JQ ++Gg'
 export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
+
+
+# --------------------
+# ssh and gpg
+# --------------------
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
