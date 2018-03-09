@@ -28,6 +28,7 @@ set menu-complete-display-prefix on
 set colored-stats on
 set mark-directories on
 set mark-symlinked-directories on
+set match-hidden-files on
 
 
 # --------------------
