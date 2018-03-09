@@ -115,5 +115,7 @@ export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
 # --------------------
 # ssh and gpg
 # --------------------
+unset SSH_AGENT_PID
 export GPG_TTY=$(tty)
+alias gpg=gpg2
 gpg-connect-agent updatestartuptty /bye >/dev/null

@@ -5,9 +5,18 @@
 [user]
     email = russell.parker7@gmail.com
     name = Russell Parker
+    signingKey = 54FE625D20681376DE2EF30F73C246C57B8D0965
+
 [color]
     ui = true
+
 [core]
     editor = vim
     autocrlf = input
     pager = less -RF
+
+[gpg]
+    program = /usr/bin/gpg2
+
+[tag]
+    forceSignAnnotated = true
