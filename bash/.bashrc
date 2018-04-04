@@ -110,6 +110,7 @@ fi
 # --------------------
 export MANPAGER='less -JQ ++Gg'
 export MANROFFOPT='-c' # equivalent to setting GROFF_NO_SGR
+export MANLESS='\ Manual\ page\ \$MAN_PN\ %lt/%L %pB\%'
 
 
 # --------------------

@@ -5,7 +5,7 @@
 [user]
     email = russell.parker7@gmail.com
     name = Russell Parker
-    signingKey = 54FE625D20681376DE2EF30F73C246C57B8D0965
+    signingKey = 0xC4EFF17B3A3899AF
 
 [color]
     ui = true
@@ -23,3 +23,9 @@
 
 [tag]
     forceSignAnnotated = true
+
+[sendemail]
+  smtpuser = russell.parker7@gmail.com
+  smtpserver = smtp.googlemail.com
+  smtpencryption = tls
+  smtpserverport = 587
