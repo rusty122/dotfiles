@@ -26,3 +26,6 @@
   smtpserver = smtp.googlemail.com
   smtpencryption = tls
   smtpserverport = 587
+
+[push]
+	default = simple
