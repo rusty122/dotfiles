@@ -3,46 +3,61 @@
 ! Author: Russell Parker
 
 !--------------------
-! color-scheme: flowers
-! source      : http://www.xcolors.net/dl/flowers
-! source      : modified from https://x.eti.tf/VCRKp.xres
+! colors
 !--------------------
+#define base00 #dce0ce
+#define base01 #cbcfbe
+#define base02 #b9bdad
+#define base03 #a5a89a
+#define base04 #666666
+#define base05 #525252
+#define base06 #404040
+#define base07 #323232
+#define base08 #9c4854
+#define base09 #b19575
+#define base0A #a1945c
+#define base0B #7f941a
+#define base0C #1a9767
+#define base0D #147094
+#define base0E #807b97
+#define base0F #443224
+
 ! special
-*.foreground:   #ffffff
-*.background:   #170e21
-*.cursorColor:  #ffffff
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
 
 ! black
-*.color0:       #071d22
-*.color8:       #617278
+*color0:       base00
+*color8:       base03
 
 ! red
-*.color1:       #9c5c5a
-*.color9:       #ceaead
+*color1:       base08
+*color9:       base09
 
 ! green
-*.color2:       #8cc495
-*.color10:      #ade1b6
+*color2:       base0B
+*color10:      base01
 
 ! yellow
-*.color3:       #f0e0aa
-*.color11:      #fbf1cf
+*color3:       base0A
+*color11:      base02
 
 ! blue
-*.color4:       #8ab6c2
-*.color12:      #b5dbe4
+*color4:       base0D
+*color12:      base04
 
 ! magenta
-*.color5:       #94a9d9
-*.color13:      #b6cbfa
+*color5:       base0E
+*color13:      base06
 
 ! cyan
-*.color6:       #7eb5ac
-*.color14:      #a3d0c8
+*color6:       base0C
+*color14:      base0F
 
 ! white
-*.color7:       #b3bec1
-*.color15:      #f7f8f8
+*color7:       base05
+*color15: 	   base07
 
 !--------------------
 ! general
