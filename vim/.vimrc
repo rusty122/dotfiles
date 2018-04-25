@@ -5,17 +5,29 @@
 "--------------------
 " general
 "--------------------
-set number                      " number lines
 set cursorline                  " add underline on current line 
 set showcmd                     " not totally sure
 set lazyredraw                  " redraw only when necessary, for performance
 set nowrap
 
 "--------------------
+" line numbering
+"--------------------
+set number relativenumber       " number lines relatively
+augroup numbertoggle            " toggle relative off when no focus
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
+set modelines=0                 " avoid security vulnerability
+set showmode
+
+"--------------------
 " syntax highlighting
 "--------------------
 syntax on
-colorscheme koehler             " use a built-in colorscheme
+colorscheme desert              " use a built-in colorscheme
 set showmatch                   " highlight matching parens
 
 "--------------------
