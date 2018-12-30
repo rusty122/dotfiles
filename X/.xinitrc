@@ -25,5 +25,8 @@ if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
 
+xsetroot -cursor_name left_ptr
+xbacklight -set 60%
+
 sxhkd -m 1 &
 exec bspwm
