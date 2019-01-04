@@ -28,5 +28,6 @@ fi
 xsetroot -cursor_name left_ptr
 xbacklight -set 60%
 
+~/.fehbg &
 sxhkd -m 1 &
 exec bspwm

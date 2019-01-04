@@ -86,7 +86,7 @@ xterm.vt100.translations: #override \
 !--------------------
 ! font
 !--------------------
-xterm.vt100.faceName: Cousine:antialias=false
+xterm.vt100.faceName: Roboto Mono
 xterm.vt100.faceSize: 9
 xterm.vt100.renderFont: true
 
