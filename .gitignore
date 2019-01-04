@@ -1,0 +1,3 @@
+*.swp
+ssh/.ssh/*
+!ssh/.ssh/config
