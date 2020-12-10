@@ -77,6 +77,8 @@ if ! shopt -oq posix; then
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
+  elif [ -f /usr/local/etc/bash_completion ]; then
+    . /usr/local/etc/bash_completion
   fi
 fi
 
@@ -84,9 +86,11 @@ fi
 # --------------------
 # colors
 # --------------------
-eval "$(dircolors -b)"
-
-alias ls='ls --color=auto'
+export CLICOLOR=1
+if [ -x /usr/bin/dircolors ]; then
+    eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+fi
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
